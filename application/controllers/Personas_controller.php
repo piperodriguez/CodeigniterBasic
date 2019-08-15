@@ -77,7 +77,7 @@ class Personas_controller extends CI_Controller{
                 redirect(base_url());
             }
         }else{
-            redirect(base_url());
+            redirect('/personas_controller/index');
         }
     }
 
@@ -90,9 +90,9 @@ class Personas_controller extends CI_Controller{
           }else{
               $this->session->set_flashdata('incorrecto', 'Persona eliminado correctamente');
           }
-          redirect(base_url());
+          redirect('/personas_controller/index');
         }else{
-          redirect(base_url());
+          redirect('/personas_controller/index');
         }
     }
 }
